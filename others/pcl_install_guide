@@ -1,0 +1,16 @@
+@@@ PCL installation guide
+@@@ VincentChan
+@@@ 11/11/2020
+
+1) Download pcl-1.8.1
+$ wget https://codeload.github.com/PointCloudLibrary/pcl/zip/pcl-1.8.1
+
+2) Build and install
+$ cd pcl-1.8.1
+$ mkdir build
+$ cd build
+$ cmake ..
+
+3) Edit the build/features/ line10, delete pcl_2d-1.8
+$ sudo make -j6
+$ sudo make install
