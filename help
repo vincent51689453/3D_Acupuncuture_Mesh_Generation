@@ -2,7 +2,7 @@ A. C++ ROS package creation
 
 1. Create package
 $ cd ~/realsense_ws/src
-$ catkin_create_pkg <name_of_package> 
+$ catkin_create_pkg <name_of_package> pcl_conversions pcl_ros roscpp sensor_msgs
 
 2. Edit package.xml
 Edit package.xml and add the following lines to it
