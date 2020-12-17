@@ -1,0 +1,18 @@
+A. C++ ROS package creation
+
+1. Create package
+$ cd ~/realsense_ws/src
+$ catkin_create_pkg <name_of_package> 
+
+2. Edit package.xml
+Edit package.xml and add the following lines to it
+<build_depend>libpcl-all-dev</build_depend>
+<exec_depend>libpcl-all</exec_depend>
+
+3. PUt your own code (may be you will not have it now, then skip)
+Your cpp file can put inside ~/realsense_ws/src/<name_of_package>/src
+
+4. Catkin_make
+$ catkin_make
+
+--------------------------------------------------------------------------------------------

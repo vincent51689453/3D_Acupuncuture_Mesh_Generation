@@ -10,8 +10,7 @@
 
 ros::Publisher pub;
 
-void 
-cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
+void cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
 {
     // Container for original & filtered data
     pcl::PCLPointCloud2* cloud = new pcl::PCLPointCloud2; 
@@ -43,7 +42,7 @@ int main (int argc, char** argv)
     ros::Subscriber sub = nh.subscribe ("input", 1, cloud_cb);
 
     // Create a ROS publisher for the output point cloud
-    pub = nh.advertise<sensor_msgs::PointCloud2> ("output", 1);
+    pub = nh.advertise<sensor_msgs::PointCloud2> ("downsample_output", 1);
     
     std::cout << "hello";
     
