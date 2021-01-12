@@ -45,7 +45,8 @@ try:
         depth_colormap = cv2.applyColorMap(cv2.convertScaleAbs(depth_image, alpha=setup.alpha_map), cv2.COLORMAP_JET)
 
         # Find the shaddow of the objects in depth colormap
-
+        processing.find_shaddow(depth_colormap, color_image, \
+            np.array(setup.shaddow_hsv_L),np.array(setup.shaddow_hsv_H))
 
         # Stack both images horizontally
         images = np.hstack((color_image, depth_colormap))

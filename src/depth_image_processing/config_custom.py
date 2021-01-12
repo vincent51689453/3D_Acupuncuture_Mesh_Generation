@@ -21,8 +21,9 @@ img_width = 640
 img_height = 480
 fps = 30
 
+
 """
 ------------------------- Detection Configuration -------------------------
 """
-shaddow_hsv_L = [118 -10 -40]
-shaddow_hsv_H = [138 10 40]
+shaddow_hsv_L = [118, -10, -40]
+shaddow_hsv_H = [138, 10, 40]
