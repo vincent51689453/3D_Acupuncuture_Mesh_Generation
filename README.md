@@ -1,4 +1,4 @@
-# Acupunture points detections with depth images
+# Realsense playground
 
 Intel Realsense pointcloud based with PCL [NO MORE]
 
